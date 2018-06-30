@@ -1,4 +1,4 @@
-# Program for computing the upperbounds on the growth constant of polyominoes and polycubes.
+# Program for computing upperbounds on the growth constant of polyominoes and polycubes.
 
 A polyomino is a plane geometric figure formed by joining one or more equal squares edge to edge. The popular computer game Tetris features polyominoes of size 4. For more about polyominoes, see https://en.wikipedia.org/wiki/Polyomino.
 
