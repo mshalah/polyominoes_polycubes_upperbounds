@@ -11,4 +11,24 @@ Denote the number of differenet polycubes that have n cubes by A_d(n). For d=2, 
 We provide here an implementation of David Klarner and Ronald Rivest's beautiful algorithm (https://pdfs.semanticscholar.org/c7fb/c20d0b9a9e96d272ae33ae5a8b0a339217e4.pdf) which proves rigorous upper bounds on the value of Klarner's constant. 
 We also extend this algorithm to higher dimensions, and provide the first-ever implementation of a program for improving the upperbound on the growth constant of 3-dimensional polycubes. 
 
-We provide two C++ implementations. The first one can be run on any computer. The second one used OpenMPI to run on a cluster. 
+We provide two C++ implementations. 
+
+The first one can be run on any computer. Compile using:
+
+g++ matrix.h utils.h Twig.h Twig3D.h main.cpp -O3 -o ub -std=c++0x -fopenmp
+
+For polyominoes, run with 
+./ub 2 i
+where i is the number of black cells. 
+For 3D polycubes, run using:
+./ub 3 i
+again, i is the number of black cells. 
+
+The second implementation uses OpenMPI to run on a cluster. We provide two separete programs, one for the 2D case, and one for the 3D case. Compile with 
+
+mpicxx Twig.h main.cpp -O3 -o ub -std=c++0x -fopenmp 
+or
+mpicxx matrix.h utils.h Twig3D.h main.cpp -O3 -o ub -std=c++0x -fopenmp
+
+and run using ./ub i
+where i is the number of dead cells.
