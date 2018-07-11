@@ -10,3 +10,5 @@ Denote the number of differenet polycubes that have n cubes by A_d(n). For d=2, 
 
 We provide here an implementation of David Klarner and Ronald Rivest's beautiful algorithm (https://pdfs.semanticscholar.org/c7fb/c20d0b9a9e96d272ae33ae5a8b0a339217e4.pdf) which proves rigorous upper bounds on the value of Klarner's constant. 
 We also extend this algorithm to higher dimensions, and provide the first-ever implementation of a program for improving the upperbound on the growth constant of 3-dimensional polycubes. 
+
+We provide two C++ implementations. The first one can be run on any computer. The second one used OpenMPI to run on a cluster. 
