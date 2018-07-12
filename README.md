@@ -27,8 +27,10 @@ again, i is the number of black cells.
 The second implementation uses OpenMPI to run on a cluster. We provide two separete programs, one for the 2D case, and one for the 3D case. Compile with 
 
 mpicxx Twig.h main.cpp -O3 -o ub -std=c++0x -fopenmp 
+
 or
-mpicxx matrix.h utils.h Twig3D.h main.cpp -O3 -o ub -std=c++0x -fopenmp
+
+mpicxx matrix.h Point3.h Twig3D.h main.cpp -O3 -o ub -std=c++0x -fopenmp
 
 and run using ./ub i
 where i is the number of dead cells.
