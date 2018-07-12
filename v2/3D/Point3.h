@@ -1,11 +1,4 @@
-//
-//  utils.h
-//  mira_twigs
-//
-//  Created by Mira Shalah on 9/26/17.
-//  Copyright (c) 2017 Mira Shalah. All rights reserved.
-//
-
+//  Created by Mira Shalah
 #ifndef mira_twigs_utils_h
 #define mira_twigs_utils_h
 #include <math.h>
