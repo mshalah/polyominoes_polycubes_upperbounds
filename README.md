@@ -2,7 +2,7 @@
 
 A polyomino is a plane geometric figure formed by joining one or more equal squares edge to edge. The popular computer game Tetris features polyominoes of size 4. For more about polyominoes, see https://en.wikipedia.org/wiki/Polyomino.
 
-A polycube (the higher-dimensional analogue of the polyominoe) is a solid figure formed by joining one or more equal cubes face to face.
+A polycube (the higher-dimensional analogue of the polyomino) is a solid figure formed by joining one or more equal cubes face to face.
 
 The most important and fundamental question about polyominoes is: how many polyominoes with n squares are there? (polyominoes are considered identical up-to translations). This remains an important open problem in combinatorial geometry (see http://cs.smith.edu/~jorourke/TOPP/P37.html#Problem.37). The same is true for higher dimensions.
 
